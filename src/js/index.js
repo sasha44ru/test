@@ -4,7 +4,21 @@ import '../scss/app.scss';
 
 var App  = function(){
     console.log(str);
-    $('body').html(str);
+    $('body').append(str);
 };
 
-var app = new App();
+let app = new App();
+
+var timeline = require('./timeline.js');
+let user = {
+    name : "SHurik",
+    messages : [
+        "hello",
+        "bye",
+        "good night"
+    ]
+};
+[1, 2, 3].map((n) => n + 1);
+var timelineModule = new timeline(user);
+timelineModule.setHeader(user);
+timelineModule.setTimeline(user);
