@@ -1,5 +1,6 @@
 var $ = require('jquery');
-var str = require("./constant");
+var str = require('./constant');
+import '../scss/app.scss';
 
 var App  = function(){
     console.log(str);
