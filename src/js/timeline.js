@@ -1,5 +1,3 @@
-var $ = require('jquery');
-
 function timeline(user){
     this.setHeader = function(){
         $("#timeline").text(user.name+ " Timeline");

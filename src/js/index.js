@@ -1,4 +1,3 @@
-var $ = require('jquery');
 var str = require('./constant');
 import '../scss/app.scss';
 
