@@ -1,4 +1,5 @@
-var str = require('./constant');
+const str = require('./constant');
+const timeline = require('./timeline.js');
 import '../scss/app.scss';
 
 var App  = function(){
@@ -8,7 +9,6 @@ var App  = function(){
 
 let app = new App();
 
-var timeline = require('./timeline.js');
 let user = {
     name : "SHurik",
     messages : [

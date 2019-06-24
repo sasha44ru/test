@@ -3,10 +3,13 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 var webpack = require('webpack');
 
 module.exports = {
-    entry: './src/js/index.js',
+    entry: {
+        home:   './src/js/home.js',
+        bundle:  './src/js/index.js'
+    },
     output: {
         path: path.resolve(__dirname, 'public/js'),
-        filename: 'bundle.js'
+        filename: '[name].js'
     },
     module: {
         rules: [
